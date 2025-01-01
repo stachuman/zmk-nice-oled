@@ -31,7 +31,7 @@ config ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
 
 config NICE_OLED_GEM_ANIMATION_WPM_FIXED_RANGE
     bool "Enable fixed range for WPM gauge/chart"
-    default y
+    default n
 
 config NICE_OLED_GEM_ANIMATION_WPM_FIXED_RANGE_MAX
     int "Fixed range maximum for WPM gauge/chart"
@@ -39,7 +39,7 @@ config NICE_OLED_GEM_ANIMATION_WPM_FIXED_RANGE_MAX
 
 config NICE_OLED_GEM_ANIMATION
     bool "Enable animation on peripheral"
-    default y
+    default n
 
 config NICE_OLED_GEM_ANIMATION_MS
     int "Animation length in milliseconds"
@@ -55,11 +55,11 @@ config NICE_OLED_POKEMON_ANIMATION_MS
 
 config NICE_OLED_VIM
     bool "Enable static vim on peripheral"
-    default n
+    default y
 
 config NICE_OLED_VIP_MARCOS
     bool "Enable static vim_marcos on peripheral"
-    default n
+    default y
 
 config NICE_VIEW_WIDGET_STATUS
     select LV_USE_LABEL
